@@ -1,0 +1,24 @@
+:root{
+    --color-all:rgb(36, 165, 198);
+    --color-btn:rgb(210, 178, 118);
+  }
+.toggle{
+    display: flex;
+    justify-content:space-between;
+    border: 3px solid var(--color-all);
+    border-radius: 1rem;
+    position: relative;
+    padding: 2px;
+    cursor: pointer;
+
+}
+.toggle>*{
+    width: 1rem;
+    height: 1rem;
+    color: var(--color-btn);
+}
+.t-button{
+    border-radius: 100%;
+    background: var(--color-all);
+    position: absolute;
+}

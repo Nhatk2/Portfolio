@@ -1,0 +1,133 @@
+:root{
+  --color-all:rgb(36, 165, 198);
+}
+.n-wrapper {
+  position: absolute;
+  width: 90%;
+  height: 10vh;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+  top: 0;
+  z-index: 1000;
+
+
+}
+.scroll-header{
+  position: fixed;
+  transition: 0.2s;
+  color: white;
+  background: rgb(80, 77, 77);
+  left: 0;
+  width: 100%;
+}.scroll-header>.n-right>.n-list{
+  flex: 0;
+}
+.n-left {
+  flex: 1;
+  align-items: center;
+  justify-content: left;
+  display: flex;
+  gap: 1.5rem;
+  margin-left: 20px;
+}
+
+.n-name {
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+.n-right {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  font-weight: 400;
+  
+}
+
+.n-list {
+  flex: 10;
+
+}
+.n-list > ul {
+  display: flex;
+  gap: 3rem;
+}
+
+.n-list > ul :hover {
+  color: var(--color-all);
+  cursor: pointer;
+}
+
+.n-button {
+  margin-left:10px;
+  flex: 2;
+}
+/* button */
+.button-Navbar {
+  height: 2.8em;
+  width: 8em;
+  background: transparent;
+  -webkit-animation: jello-horizontal 0.9s both;
+  animation: jello-horizontal 0.9s both;
+  border: 2px solid #016DD9;
+  outline: none;
+  color: #016DD9;
+  font-size: 17px;
+  border-radius: 20px;
+  margin-left: 12px;
+}
+ .button-Navbar:hover {
+  background: #016DD9;
+  color: #ffffff;
+  animation: squeeze3124 0.9s both;
+  cursor: pointer;
+ }
+ @keyframes squeeze3124 {
+  0% {
+   -webkit-transform: scale3d(1, 1, 1);
+   transform: scale3d(1, 1, 1);
+  }
+ 
+  30% {
+   -webkit-transform: scale3d(1.25, 0.75, 1);
+   transform: scale3d(1.25, 0.75, 1);
+  }
+ 
+  40% {
+   -webkit-transform: scale3d(0.75, 1.25, 1);
+   transform: scale3d(0.75, 1.25, 1);
+  }
+ 
+  50% {
+   -webkit-transform: scale3d(1.15, 0.85, 1);
+   transform: scale3d(1.15, 0.85, 1);
+  }
+ 
+  65% {
+   -webkit-transform: scale3d(0.95, 1.05, 1);
+   transform: scale3d(0.95, 1.05, 1);
+  }
+ 
+  75% {
+   -webkit-transform: scale3d(1.05, 0.95, 1);
+   transform: scale3d(1.05, 0.95, 1);
+  }
+ 
+  100% {
+   -webkit-transform: scale3d(1, 1, 1);
+   transform: scale3d(1, 1, 1);
+  }
+ }
+ 
+@media screen and (max-width: 480px) {
+  .n-list {
+    display: none;
+  }
+}
+@media screen and (max-width: 1150px) {
+  .n-list{
+    display: none;
+  }
+}
+

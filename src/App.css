@@ -1,0 +1,35 @@
+:root
+{
+    --tw-gradient-from:#1f2937;
+    --tw-gradient-to:#000;
+    --tw-gradient-stops:var(var(--tw-gradient-from), var(var(--tw-gradient-to ,rgb(31 45 55 /0))));
+    --yellow: #F5C32C;
+    --orange :#3487b8;
+    --black : #242D49;
+    --gray : #788097;
+    --blueCard : #DDF8FE;
+    --purple: rgb(238 210 255);
+    --boxShadow : 0px 19px 60px rgb(0 0 0 / 8%);
+    --orangeCard: rgba(252, 166, 31, 0.45);
+    --smboxShadow: -79px 51px 60px rgba(0, 0, 0, 0.08);
+}
+
+.App{
+    padding: 0.5rem 2.5rem;
+    overflow: hidden;
+    color: var(--black);    
+}
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&family=Merriweather:ital@1&display=swap');
+body{
+  font-family: 'Merriweather', serif; 
+}
+  @media screen and (max-width: 480px) {
+    .App {
+      padding: 0.5rem 1rem;
+
+    }
+  }
+
+  
+
+  

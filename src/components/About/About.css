@@ -1,0 +1,227 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&family=Merriweather:ital@1&display=swap');
+
+.about {
+  padding: 0 3rem 0 3rem;
+  display: flex;
+  height: 60vh;
+  font-family: 'Dancing Script', cursive;
+  font-family: 'Merriweather', serif;
+
+  /* scroll */
+  align-items: center;
+}
+
+.w-left{
+  flex: 1;
+  position: relative;
+}
+.w-right{
+  display: flex;
+  position: relative;
+  flex: 1;
+  flex-direction: column;
+  gap: 2.5rem;
+}
+.w-left > * {
+  position: absolute;
+  z-index: 1;
+}
+ .w-left{
+  top: -60%;
+  transform: scale(0.8);
+  z-index: 1000;
+} 
+/* right side */
+.awesome__about {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+
+}
+.about__me{
+  font-size: 3.5rem;
+  color:rgb(102, 194, 243) ;
+
+}
+.awesome__name{
+  font-size: 2.5rem;
+  color:rgb(102, 194, 243);
+  font-family:inherit;
+}
+.awesome__spane{
+  font-size: 2rem;
+  margin-top: 1rem;
+  font-family:inherit;
+}
+.awesome > :nth-child(1) {
+  color: var(--black);
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+.awesome > :nth-child(2) {
+  color:rgb(102, 194, 243);
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+.awesome > :nth-child(4) {
+  color: var(--gray);
+  font-size: 1.2rem;
+  margin-top: 1rem;
+}
+.s-button {
+  width: 8rem;
+  height: 2rem;
+  margin-top: 4rem;
+}
+/* button */
+.button-about {
+  --clr-font-main: hsla(0 0% 20% / 100);
+  --btn-bg-1: rgb(165, 201, 229);
+  --btn-bg-2: rgb(102, 194, 243);
+  --btn-bg-color: hsla(360 100% 100% / 1);
+  --radii: 0.5em;
+  display: flex;
+  align-items: center;
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 17px;
+  padding: 0.8em 1.3em 0.8em 0.9em;
+  color: white;
+  background: #ad5389;
+  background: linear-gradient(325deg, var(--btn-bg-2) 0%, var(--btn-bg-1) 25%, var(--btn-bg-2) 70%);
+  border: none;
+  letter-spacing: 0.05em;
+  border-radius: 16px;
+  box-shadow: 0 2px 0 ;
+}
+
+.button-about svg {
+  margin-right: 3px;
+  transform: rotate(30deg);
+  transition: transform 0.5s cubic-bezier(0.76, 0, 0.24, 1);
+}
+
+.button-about span {
+  transition: transform 0.5s cubic-bezier(0.76, 0, 0.24, 1);
+}
+
+.button-about:hover svg {
+  transform: translateX(5px) rotate(90deg);
+}
+
+.button-about:hover span {
+  transform: translateX(7px);
+}
+
+/* right side */
+.w-mainCircle {
+  left: 9rem;
+  position: relative;
+  width: 18rem;
+  height: 18rem;
+  border-radius: 100%;
+  box-shadow: var(--smboxShadow);
+  top: 2rem;
+  background: white;
+  /* darkMode */
+  z-index: 2;
+}
+.w-mainCircle > * {
+  position: absolute;
+}
+.w-mainCircle > :nth-child(1) {
+  top: -3rem;
+  left: 6rem;
+}
+.w-mainCircle > :nth-child(2) {
+  left: -3rem;
+  top: 5rem;
+}
+.w-mainCircle > :nth-child(3) {
+  left: 6rem;
+  top: 5rem;
+}
+.w-mainCircle > :nth-child(4) {
+  left: 15rem;
+  top: 5rem;
+}
+.w-mainCircle > :nth-child(5) {
+  left: 6rem;
+  top: 13rem;
+}
+.w-secCircle {
+  width: 6rem;
+  height: 6rem;
+  position: absolute;
+  border-radius: 100%;
+  border: 5px solid #ebebeb;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: "none";
+  box-shadow: var(--smboxShadow);
+  background: white;
+}
+
+.w-secCircle > img {
+  transform: scale(0.6);
+}
+
+.w-backCircle {
+  position: absolute;
+  height: 13rem;
+  width: 13rem;
+  border-radius: 100%;
+  /* darkMode */
+  z-index: 1;
+}
+.blueCircle {
+  background: #1949b8;
+  left: 18rem;
+  top: 0rem;
+}
+.yellowCircle {
+  background: #f5c32c;
+  left: 18rem;
+  top: 8rem;
+}
+
+@media screen and (max-width: 480px) {
+  .about {
+    flex-direction: column;
+    gap: 5rem;
+    padding: 30rem 0rem 0rem;
+  }
+  .w-right {
+    display: flex;
+    align-items: flex-start;
+    justify-content:start;
+    transform: scale(0.7);
+  }
+  .w-mainCircle{
+    position: static;
+  }
+  .w-backCircle{
+    left: 8rem!important;
+  }
+  .awesome__spane{
+    font-size: 40px;
+  }
+  .awesome__about p{
+    display: none;
+  }
+  .button-about{
+    margin-top: 3rem;
+  }
+   .send{
+    padding: 12px;
+    width: 7rem;
+  }
+}
+@media screen and (max-width: 1280px) {
+  .w-left {
+    display: none;
+  }
+}
+
+
