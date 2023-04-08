@@ -9,7 +9,7 @@ const Toggle = () => {
   const darkMode = theme.state.darkMode;
   const handleClick = () => {
     // debugger
-    localStorage.setItem("theme",!localStorage.getItem('theme'))
+    // localStorage.setItem("theme",!localStorage.getItem('theme'))
     theme.dispatch({ type: "toggle" });
   };
   return (
