@@ -17,11 +17,16 @@
   position: fixed;
   transition: 0.2s;
   color: white;
-  background: rgb(80, 77, 77);
+  background: rgba(80, 77, 77, 0.9);
   left: 0;
   width: 100%;
-}.scroll-header>.n-right>.n-list{
+}
+.scroll-header>.n-right>.n-list{
   flex: 0;
+  margin-right: 22px;
+}
+.scroll-header>.n-right{
+  margin-right: 40px;
 }
 .n-left {
   flex: 1;

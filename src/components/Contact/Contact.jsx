@@ -65,7 +65,6 @@ const Contact = () => {
     <span class="now">now!</span>
     <span class="play">Send</span>
 </button>
-          
           <span>{done && "Thanks for Contacting me"}</span>
           <div
             className="blur c-blur1"
