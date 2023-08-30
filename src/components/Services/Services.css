@@ -9,7 +9,7 @@
   padding-top: 3rem;
 }
 a{
-  list-style-type: none;
+ text-decoration: none;
 }
 /* left side */
 .my-awesome {
@@ -18,6 +18,7 @@ a{
   position: relative;
   gap: 10px;
   width: 30%;
+  list-style-type: none;
 }
 
 .my-awesome > :nth-child(1) {
@@ -62,7 +63,7 @@ a{
 
 .button-services span {
   transition: transform 0.5s cubic-bezier(0.76, 0, 0.24, 1);
-  text-decoration: underline;
+  text-decoration: none;
   
 }
 

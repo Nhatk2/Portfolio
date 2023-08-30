@@ -22,7 +22,7 @@ const About = () => {
       {/* left side */}
       <div className="w-left">   
       { <motion.div
-          initial={{right: "80%",top:"-20%"}}
+          initial={{right: "80%",top:"-10%"}}
           whileInView={{ right: "0%" }}
           transition={transition}
           className="floating-div"

@@ -46,13 +46,13 @@ const Experience = () => {
     {
       id: 6,
       src: nextjs,
-      title: "Next JS",
+      title: "Bootstrap",
       style: "shadow-white",
     },
     {
       id: 7,
       src: graphql,
-      title: "GraphQL",
+      title: "SQL",
       style: "shadow-pink-400",
     },
     {
@@ -73,7 +73,7 @@ const Experience = () => {
           <p>These are the technologies I've worked with</p>
         </div>
        <div className="achievement-right"> 
-          {techs.map(({ id, src, title, style }) => (
+          {techs.map(({ id, src, title }) => (
             <div className="achievement-img" key={id} style={{style: techs.style}}>
               <img src={src} alt=""/>
               <p>{title}</p>
