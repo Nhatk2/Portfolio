@@ -16,8 +16,8 @@
 .scroll-header{
   position: fixed;
   transition: 0.2s;
-  color: white;
-  background: rgba(80, 77, 77, 0.9);
+  color:black;
+  background: white;
   left: 0;
   width: 100%;
 }

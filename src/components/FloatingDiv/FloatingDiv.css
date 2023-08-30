@@ -5,10 +5,10 @@
   padding: 0px 28px 0px 0px;
 }
 .floatingDiv > img {
-  transform: scale(1);
+  width: 30rem;
   border-radius: 20% 40%;
   opacity: 0.7;
-
+  transform: translateY(-10rem);
 }
 .floatingDiv > span {
   font-family: sans-serif;

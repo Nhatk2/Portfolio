@@ -2,7 +2,7 @@
 import React, { useContext } from "react";
 import "./Intro.css";
 // import { useState, useEffect } from "react";
-import img__intro from "../../img/logo-intro.jpg";
+import img__intro from "../../img/logo-intro.png";
 import FloatinDiv from "../FloatingDiv/FloatingDiv";
 import { themeContext } from "../../Context";
 import { motion } from "framer-motion";
@@ -28,7 +28,7 @@ const Intro = () => {
           strings:words,
           autoStart:true,
           loop:true,
-          delay:100,
+          delay:1000,
           wrapperClassName:'typewriter'
         }}
         />  

@@ -58,21 +58,20 @@
   height: 2rem;
 }
 .i-icons {
-  transform: translateX(-25px);
+  transform: translateX(-15px);
   display: flex;
   gap: 0rem;
 }
 .i-icons i{
-  font-size: 100px;
+  font-size: 40px;
+  margin: 0 15px;
   color: var(--color-all);
 }
-.i-icons > * {
-  transform: scale(.4);
-}
+
 .i-icons > *:hover {
   cursor: pointer;
-  transform: scale(1);
-  transition: 1s;
+  transform: rotate(360deg);
+  transition: all 1s ;
 }
 /* right side styling */
 .i-right {
@@ -127,8 +126,6 @@
   z-index: 1;
 }
  .i-right > :nth-child(1) {
-  box-shadow:12px 7px 30px 5px rgba(163, 209, 220,.7);
-  left: 10%;
   transform: scale(0.8);
   z-index: 1;
 } 
