@@ -10,6 +10,12 @@
   /* scroll */
   align-items: center;
 }
+.img-about{
+  width: 30rem;
+  border-radius: 20%;
+  opacity: 0.9;
+  transform: translateY(-10rem);
+}
 
 .w-left{
   flex: 1;
@@ -50,7 +56,7 @@
 }
 .awesome__spane{
   font-size: 2rem;
-  margin-top: 1rem;
+  margin: 2rem 0rem;
   font-family:inherit;
 }
 .awesome > :nth-child(1) {
@@ -73,6 +79,9 @@
   height: 2rem;
   margin-top: 4rem;
 }
+.btn-about{
+  margin-top: 3rem;
+}
 /* button */
 .button-about {
   --clr-font-main: hsla(0 0% 20% / 100);
@@ -84,7 +93,7 @@
   align-items: center;
   font-family: inherit;
   font-weight: 500;
-  font-size: 17px;
+  font-size: 20px;
   padding: 0.8em 1.3em 0.8em 0.9em;
   color: white;
   background: #ad5389;
@@ -93,6 +102,7 @@
   letter-spacing: 0.05em;
   border-radius: 16px;
   box-shadow: 0 2px 0 ;
+  
 }
 
 .button-about svg {
